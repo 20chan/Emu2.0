@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emu2Emulator", "Emu2Emulator\Emu2Emulator.csproj", "{718BD60B-2783-430B-8331-2379C2CC3CDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{718BD60B-2783-430B-8331-2379C2CC3CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718BD60B-2783-430B-8331-2379C2CC3CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718BD60B-2783-430B-8331-2379C2CC3CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718BD60B-2783-430B-8331-2379C2CC3CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD90DC6A-6608-4DDE-B7A8-13B33CDD0813}
+	EndGlobalSection
+EndGlobal
