@@ -10,25 +10,25 @@ namespace Emu2Emulator {
         public byte[] Memory;
         public bool[] Writables;
 
-        public readonly byte[] Code;
-
         public event Action<byte> SerialOut;
 
-        public byte C0 => Code[PC];
-        public byte C1 => Code[PC + 1];
+        public byte C0 => Memory[PC];
+        public byte C1 => Memory[PC + 1];
 
         public short C0111 => (short)((C0 & 0xf) * 0x100 + C1);
-         
+
         public Emu2(byte[] code) {
             A = 0;
             PC = 0x100;
             Memory = new byte[0x1000];
             Writables = new bool[0x1000];
-            for (var i = 0; i <Writables.Length; i++) {
+            for (var i = 0; i < Writables.Length; i++) {
                 Writables[i] = true;
             }
 
-            Code = code;
+            for (var i = 0; i < code.Length; i++) {
+                Memory[i + 0x100] = code[i];
+            }
         }
 
         public void Step() {

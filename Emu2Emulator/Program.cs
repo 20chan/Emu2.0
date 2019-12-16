@@ -6,7 +6,7 @@ namespace Emu2Emulator {
         static void Main(string[] args) {
             var code = File.ReadAllBytes("rom");
             var emu = new Emu2(code);
-            emu.SerialOut += b => Console.Write($"{b:X2}");
+            emu.SerialOut += b => Console.Write($"{(char)b}");
 
             while (true) {
                 emu.Step();
